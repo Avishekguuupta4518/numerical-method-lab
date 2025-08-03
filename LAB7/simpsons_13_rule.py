@@ -34,7 +34,7 @@ else:
     print(f"\nApproximate integral using Simpson's 1/3 Rule: {i:.6f}")
 
     plt.plot(x, [y(xi) for xi in x], color='red', label='f(x) ')
-    xval = np.linspace(a, b, 1000)
+    xval = np.linspace(a+10, b-10, 1000)
     plt.plot(xval, [y(xi) for xi in xval], label='Smooth Curve')
 
     ypoints = [y(xi) for xi in x]
