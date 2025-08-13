@@ -19,10 +19,6 @@ t = []
 xval = []
 yval = []
 
-t.append([x, y])
-xval.append(x)
-yval.append(y)
-
 for i in range(n):
     k1 = h * f(x, y)
     k2 = h * f(x + h/2, y + k1/2)
