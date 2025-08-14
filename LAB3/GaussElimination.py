@@ -1,6 +1,5 @@
 # to solve the system of linear of equation by using Gauss Elimination Method in python programming
 
-
 import numpy as np
 
 n = int(input("Enter the number of variable: "))

@@ -14,6 +14,7 @@ print(np.matrix(a))
 
 for i in range(n):
     x.append(list(map(float, input('Initial vector: ').split())))
+    
 x = np.array(x)
 print("Initial Vector x:")
 print(np.matrix(x))
@@ -33,15 +34,10 @@ def inv(mat):
 
 while itr <= N:
     y = np.dot(inv(a), x)
-    
-    # Find the maximum absolute value in the result vector (flattened)
     maxev = np.max(np.abs(y))
-    
-    # Normalize the vector
     x = y / maxev
-
-    # Check convergence
     err = abs(maxev - oldev)
+    
     if err < e:
         break
 

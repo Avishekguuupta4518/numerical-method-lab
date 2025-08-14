@@ -50,10 +50,12 @@ x_vals = np.linspace(a - 2, b + 2, 500)
 y_vals = [f(x) for x in x_vals]
 
 plt.plot(x_vals, y_vals, label='f(x)', color='blue')
-plt.axhline(0, color='red', linestyle='--')  # x-axis
+plt.axhline(0, color='red', linestyle='--')  
+
 for c, i in points:
-    plt.plot(c, f(c), 'ro')  # red point
-    plt.text(c, f(c) + 0.1, f'{i+1}', ha='center')  
+    plt.plot(c, f(c), 'ro') 
+    plt.text(c, f(c) + 0.1, f'{i+1}', ha='center') 
+     
 plt.title("Secant Method Approximations")
 plt.xlabel("x")
 plt.ylabel("f(x)")

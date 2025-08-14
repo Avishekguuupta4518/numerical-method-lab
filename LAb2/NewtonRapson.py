@@ -52,9 +52,11 @@ y_vals = [f(x) for x in x_vals]
 plt.figure(figsize=(8, 6))
 plt.plot(x_vals, y_vals, label=f'f(x) = {eqn}', color='blue')
 plt.axhline(0, color='red', linestyle='--')
+
 for pt, i in points:
     plt.plot(pt, f(pt), 'ro')
     plt.annotate(f'{i + 1}', (pt, f(pt)), textcoords='offset points', xytext=(0, 10), ha='center')
+    
 plt.title("Function Plot with Newton-Raphson Method Points")
 plt.xlabel('x')
 plt.ylabel('f(x)')
